@@ -1,5 +1,6 @@
 # Expression for identical elements.
 # Har definert og lagt alle flagg-elementene oppå hverandre ved hjelp av "overlay-xy"
+
 fun flag-display(vertical-cross-color,horizontal-cross-color, bottom-vertical-cross-color, bottom-horizontal-cross-color,base-color):
 frame(
     overlay-xy(rectangle(16, 128,"solid", vertical-cross-color),-65, -0, 
