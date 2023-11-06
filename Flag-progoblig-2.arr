@@ -1,5 +1,5 @@
-# Expression for identical elements
-
+# Expression for identical elements.
+# Har definert og lagt alle flagg-elementene oppå hverandre ved hjelp av "overlay-xy"
 fun flag-display(vertical-cross-color,horizontal-cross-color, bottom-vertical-cross-color, bottom-horizontal-cross-color,base-color):
 frame(
     overlay-xy(rectangle(16, 128,"solid", vertical-cross-color),-65, -0, 
@@ -8,20 +8,25 @@ frame(
           overlay-xy(rectangle(200, 30, "solid", bottom-horizontal-cross-color),0, -50,
             rectangle(200,128, "solid", base-color))))))
 end
-#Danmark
+
+# Her er alle flaggene som har blitt laget, Danmark, Sverige, Norge, Island, og Finland i rekkefølge.
+
+# Danmark
 flag-display("white", "white", "white", "white", "red")
 
-#Sverige
+# Sverige
 flag-display("yellow", "yellow", "yellow", "yellow","royal blue")
 
-#Norge
+# Norge
 flag-display("blue","blue","white", "white", "red")
 
-#Island
+# Island
 flag-display("red", "red", "white", "white", "royal blue")
 
-#Finland
+# Finland
 flag-display("blue", "blue", "blue", "blue", "white")
+
+# Funksjon for brukeren å kunne taste inn hvilket flagg de vil vise ved bruk av "Vis(flagg)", og bruker "if", "else if", og "else". 
 
 fun Vis(flagg):
  
